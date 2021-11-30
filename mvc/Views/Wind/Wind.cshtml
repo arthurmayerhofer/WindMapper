@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Wind Roses";
+}
+<h1>@ViewData["Title"]</h1>
+
+@model List<Wind>;
+
+<p>DataBase</p>
+<p>Date, Velocity(m/s), Direction(Graus)</p>
+
+
+@foreach (var wind in Model)
+{
+    <div>@wind.DataHora, @wind.Velocidade, @wind.Direcao</div>
+}
+
+
+
+
